@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Descubra seu signo</title>
+<style>
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&display=swap");
+
+input {
+  caret-color: red;
+}
+
+body {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;  
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  place-items: center;
+  overflow: hidden;
+  font-family: poppins;
+}
+
+.container {
+  position: relative;
+  width: 300px;
+  height: 320px;
+  border-radius: 15px;
+  padding: 40px;
+  box-sizing: border-box;
+  background:#e7e7e7;
+  box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px white;
+}
+
+.brand-title {
+  margin-top: -25px;
+  font-weight: 700;
+  font-size: 26px;
+  color: #002fff;
+  letter-spacing: 1px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.inputs {
+  text-align: left;
+  margin-top: 30px;
+}
+
+label,
+input,
+button {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
+
+label {
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+label:nth-of-type(2) {
+  margin-top: 12px;
+}
+
+input {
+  background: #ecf0f3;
+  padding: 10px;
+  padding-left: 20px;
+  height: 40px;
+  font-size: 14px;
+  border-radius: 10px;
+  box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
+}
+
+button {
+  color: rgb(255, 255, 255);
+  margin-top: 40px;
+  width: 90px;
+  margin-left: auto;
+  background: #0026ff;
+  height: 35px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 800;
+  box-shadow: 6px 6px 6px #cbced1, -6px -6px 6px white;
+  transition: 0.5s;
+}
+
+button:hover {
+  box-shadow: none;
+}
+
+a {
+  position: absolute;
+  font-size: 8px;
+  bottom: 4px;
+  right: 4px;
+  text-decoration: none;
+  color: black;
+  background: yellow;
+  border-radius: 10px;
+  padding: 2px;
+}
+
+.button1{
+color: #ffffff;
+margin-left: 30px;
+margin-top: -35px;
+height: 35px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 800;
+  box-shadow: 6px 6px 6px #cbced1, -6px -6px 6px white;
+  transition: 0.5s;
+}
+
+h1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+</style>
+
+
+<body>
+  <div class="container">
+  <div class="brand-logo"></div>
+  <div class="brand-title"><h4>SEU SIGNO</h4></div>
+  <div class="inputs">
+    <form action="signos.php" method="post">
+    <label>DATA DE NASCIMENTO</label>
+    <input type="date" class="form-control" id="floatingInput" name="dataNasc" placeholder=""required>
+    <button type="submit" value="submit">Pesquisar</button>
+    <button class="button1" type="reset">Limpar</button>
+  </form>
+  </div>
+  
+</div>
+
+</body>
+</html>
